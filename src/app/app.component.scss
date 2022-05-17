@@ -1,0 +1,48 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.navbar {
+  top: 0;
+  left: 0;
+  position: sticky;
+  height: max-content;
+  z-index: 1;
+  min-width: min-content;
+}
+.nav-drawer {
+  flex-shrink: 0;
+  min-width: min-content;
+  min-height: 0;
+}
+.nav-drawer-item {
+  min-width: 0;
+  min-height: 0;
+}
+.button {
+  color: hsla(var(--igx-grays-900));
+}
+.group {
+  align-items: stretch;
+  overflow: auto;
+  min-width: 50px;
+  min-height: 50px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.view-container {
+  min-width: 0;
+  min-height: 0;
+  position: relative;
+  flex-grow: 1;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+.row-layout {
+  display: flex;
+}

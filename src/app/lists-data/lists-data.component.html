@@ -1,0 +1,66 @@
+<div class="group row-layout">
+  <igx-card type="outlined" [horizontal]="true" *ngFor="let item of northwindEmployees" class="card">
+    <div>
+      <igx-card-header>
+        <h3 igxCardHeaderTitle>
+          {{ item.lastName }}
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+          {{ item.title }}
+        </h5>
+      </igx-card-header>
+    </div>
+    <igx-card-media width="96px">
+      <img [src]="item.avatarUrl" />
+    </igx-card-media>
+  </igx-card>
+</div>
+<div class="group_1 row-layout">
+  <div class="group_4 row-layout">
+    <igx-list class="list">
+      <igx-list-item [isHeader]="false" *ngFor="let item of northwindEmployees" class="list-item">
+        <span igxListThumbnail>
+          <igx-avatar [src]="item.avatarUrl" size="medium"></igx-avatar>
+        </span>
+        <span igxListLineTitle>{{ item.lastName }}</span>
+        <span igxListLineSubTitle>{{ item.title }}</span>
+        <span igxListAction>
+          <igx-icon class="icon">
+            star
+          </igx-icon>
+        </span>
+      </igx-list-item>
+    </igx-list>
+  </div>
+  <div class="group_4 row-layout">
+    <igx-list class="list">
+      <igx-list-item [isHeader]="false" *ngFor="let item of northwindEmployees" class="list-item">
+        <span igxListThumbnail>
+          <igx-avatar [src]="item.avatarUrl" size="large" [roundShape]="true"></igx-avatar>
+        </span>
+        <span igxListLineTitle>{{ item.lastName }}</span>
+        <span igxListLineSubTitle>{{ item.title }}</span>
+        <span igxListLine>
+          <div class="group_2 row-layout">
+            <div class="group_3 column-layout">
+              <p class="igx-typography__caption text">
+                Birthday
+              </p>
+              <p class="igx-typography__caption text_1">
+                {{ item.birthDate }}
+              </p>
+            </div>
+            <div class="group_3 column-layout">
+              <p class="igx-typography__caption text">
+                Country
+              </p>
+              <p class="igx-typography__caption text_1">
+                {{ item.address.country }}
+              </p>
+            </div>
+          </div>
+        </span>
+      </igx-list-item>
+    </igx-list>
+  </div>
+</div>

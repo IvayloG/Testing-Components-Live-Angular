@@ -1,0 +1,93 @@
+<div class="group row-layout">
+  <div class="group_2 row-layout">
+    <button igxButton="raised" igxRipple [igxToggleAction]="customDialog" class="button_1">
+      <igx-icon>
+        open_in_new
+      </igx-icon>
+      <span>Open custom dialog</span>
+    </button>
+    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" [igxToggleAction]="customDialog" #customDialog class="dialog">
+      <igx-dialog-title>
+        <h5>
+          Confirmation
+        </h5>
+      </igx-dialog-title>
+      <ng-container>
+        <img src="https://cdn.shopify.com/s/files/1/3097/3722/products/HR_143065a_23e36001-852b-4fe7-ab95-49402350ddf4_1666x.jpg?v=1613548614" class="image" />
+      </ng-container>
+      <igx-dialog-actions>
+        <button igxButton="raised" igxRipple [igxToggleAction]="customDialog" class="button">
+          Yay
+        </button>
+        <button igxButton="outlined" igxRipple [igxToggleAction]="customDialog" class="button">
+          Nay
+        </button>
+      </igx-dialog-actions>
+    </igx-dialog>
+  </div>
+  <div class="group_2 row-layout">
+    <button igxButton="raised" igxRipple [igxToggleAction]="alert" class="button_1">
+      <igx-icon>
+        open_in_new
+      </igx-icon>
+      <span>Open alert dialog</span>
+    </button>
+    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" message="Are you sure you want to do this?" leftButtonLabel="Cancel" rightButtonLabel="OK" (leftButtonSelect)="alert.toggle()" (rightButtonSelect)="alert.toggle()" #alert class="dialog"></igx-dialog>
+    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" message="Are you sure you want to do this?" leftButtonLabel="Cancel" rightButtonLabel="OK" (leftButtonSelect)="dialog.toggle()" (rightButtonSelect)="dialog.toggle()" #dialog class="dialog">
+      <igx-dialog-title>
+        <h5>
+          Confirmation
+        </h5>
+      </igx-dialog-title>
+    </igx-dialog>
+  </div>
+  <div class="group_2 row-layout">
+    <button igxButton="raised" igxRipple [igxToggleAction]="confirm" class="button_1">
+      <igx-icon>
+        open_in_new
+      </igx-icon>
+      <span>Open confirmation dialog</span>
+    </button>
+    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" message="Are you sure you want to do this?" leftButtonLabel="Cancel" rightButtonLabel="Show me" (rightButtonSelect)="customDialog.toggle()" (leftButtonSelect)="confirm.toggle()" #confirm class="dialog">
+      <igx-dialog-title>
+        <h5>
+          Show custom dialog?
+        </h5>
+      </igx-dialog-title>
+    </igx-dialog>
+  </div>
+</div>
+<div class="group row-layout">
+  <div class="group_1 row-layout">
+    <button igxButton="raised" igxRipple [igxToggleAction]="snackbar" class="button_1">
+      <igx-icon>
+        open_in_new
+      </igx-icon>
+      <span>Open snackbar</span>
+    </button>
+  </div>
+  <div class="group_1 row-layout">
+    <button igxButton="raised" igxRipple [igxToggleAction]="banner" class="button_1">
+      <igx-icon>
+        open_in_new
+      </igx-icon>
+      <span>Open banner</span>
+    </button>
+  </div>
+</div>
+<igx-snackbar actionText="Action" (clicked)="snackbar.toggle()" #snackbar class="snackbar">
+  This is a message
+</igx-snackbar>
+<igx-banner #banner class="banner">
+  <igx-icon class="icon">
+    mail
+  </igx-icon>
+  <p>
+    Banner message
+  </p>
+  <igx-banner-actions>
+    <button igxButton="flat" igxRipple class="button_2">
+      Button
+    </button>
+  </igx-banner-actions>
+</igx-banner>

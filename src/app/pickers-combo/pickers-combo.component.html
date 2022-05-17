@@ -1,0 +1,105 @@
+<div class="group_1 row-layout">
+  <div class="group_2 column-layout">
+    <igx-select type="border" value="2" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon_1">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-select-item value="1">
+        Value 1
+      </igx-select-item>
+      <igx-select-item value="2" [selected]="true">
+        value 2
+      </igx-select-item>
+      <igx-select-item value="3">
+        value 3
+      </igx-select-item>
+    </igx-select>
+    <igx-select type="box" placeholder="pick a value" class="user-input">
+      <igx-select-item value="Option">
+        Option
+      </igx-select-item>
+    </igx-select>
+    <igx-select type="border" placeholder="pick a value" class="user-input">
+      <igx-select-item value="Option">
+        Android
+      </igx-select-item>
+      <igx-select-item value="Option">
+        iOS
+      </igx-select-item>
+      <igx-select-item value="Option">
+        Web
+      </igx-select-item>
+    </igx-select>
+    <igx-select type="border" placeholder="Select a value" class="user-input">
+      <igx-suffix>
+        <igx-icon class="icon_1">
+          date_range
+        </igx-icon>
+      </igx-suffix>
+      <igx-select-item value="Option">
+        Option
+      </igx-select-item>
+      <igx-select-item value="Option">
+        Option
+      </igx-select-item>
+      <igx-select-item value="Option">
+        Option
+      </igx-select-item>
+      <label igxLabel>Options</label>
+    </igx-select>
+    <igx-select type="box" [disabled]="true" class="user-input">
+      <label igxLabel>I have a label</label>
+    </igx-select>
+  </div>
+  <div class="group_2 column-layout">
+    <igx-combo type="border" placeholder="no label + placeholder" [data]="travelAppArticlesSource1" valueKey="title" displayKey="title" [filterable]="true" [autoFocusSearch]="true" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon_1">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-hint>sample hint text</igx-hint>
+      <label igxLabel>Categories</label>
+    </igx-combo>
+    <igx-combo type="border" placeholder="disabled combo" [disabled]="true" [data]="travelAppArticlesSource1" valueKey="title" displayKey="title" [filterable]="true" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon_1">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          warning
+        </igx-icon>
+      </igx-suffix>
+      <label igxLabel>Description</label>
+    </igx-combo>
+    <igx-combo placeholder="Box-style combo" [data]="northwindEmployees" valueKey="employeeID" displayKey="firstName" [filterable]="true" [autoFocusSearch]="true" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon_1">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <label igxLabel>Names</label>
+    </igx-combo>
+    <igx-combo placeholder="Box-style combo + disabled" [disabled]="true" [data]="northwindEmployees" valueKey="employeeID" displayKey="firstName" [filterable]="true" [autoFocusSearch]="true" class="user-input"></igx-combo>
+  </div>
+</div>
+<div class="group row-layout">
+  <button igxButton="raised" igxRipple [igxToggleAction]="dropdown" class="button">
+    Open dropdown
+  </button>
+  <igx-drop-down #dropdown class="dropdown">
+    <igx-drop-down-item>
+      Option
+    </igx-drop-down-item>
+    <igx-drop-down-item>
+      Option
+    </igx-drop-down-item>
+    <igx-drop-down-item>
+      Option
+    </igx-drop-down-item>
+  </igx-drop-down>
+</div>

@@ -1,0 +1,110 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: auto;
+}
+.group {
+  flex-wrap: wrap;
+  align-content: stretch;
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-items: stretch;
+  min-height: 50px;
+  min-width: 50px;
+}
+.group_1 {
+  display: flex;
+}
+.group_2 {
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-items: stretch;
+  min-height: 50px;
+  min-width: 50px;
+}
+.text {
+  height: max-content;
+  margin: 0.0px;
+  padding: 0.0px;
+}
+.group_3 {
+  align-items: stretch;
+  margin: 0.0px;
+  padding: 0.0px;
+}
+.body-content {
+  min-height: 50px;
+  min-width: 50px;
+}
+.actions-content {
+  min-height: 40px;
+  min-width: 50px;
+}
+.card-2 {
+  width: 371.0px;
+  flex-shrink: 0;
+  margin: 16px;
+  padding: 0.0px;
+  height: max-content;
+  min-width: 320.0px;
+  min-height: 50.0px;
+}
+.card-3 {
+  width: 342px;
+  flex-shrink: 0;
+  margin: 16px;
+  padding: 0.0px;
+  height: max-content;
+  min-width: 320.0px;
+  min-height: 50.0px;
+}
+.card {
+  width: 320.0px;
+  flex-shrink: 0;
+  margin: 16px;
+  padding: 0.0px;
+  height: max-content;
+  min-width: 320.0px;
+  min-height: 50.0px;
+}
+.card_1 {
+  width: max-content;
+  margin: 16px;
+  padding: 0.0px;
+  height: max-content;
+  min-width: 320.0px;
+  min-height: 50.0px;
+}
+.card-11 {
+  flex-shrink: 0;
+}
+.avatar {
+  margin: 0.0px;
+  padding: 0.0px;
+}
+.calendar {
+  margin: 16px;
+  width: max-content;
+  height: max-content;
+  flex-shrink: 0;
+}
+.button {
+  width: max-content;
+  height: max-content;
+  margin: 0.0px;
+  padding: 0.0px;
+}
+.button_1 {
+  margin: 0.0px;
+  padding: 0.0px;
+}
+.row-layout {
+  display: flex;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}

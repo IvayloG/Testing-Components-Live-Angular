@@ -1,0 +1,59 @@
+:host {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.column-layout-1 {
+  padding: 32.0px;
+  width: 400.0px;
+  background-color: hsla(var(--igx-surface-500));
+  align-items: stretch;
+  margin: 0.0px;
+  flex-shrink: 0;
+}
+.column-layout-1_1 {
+  padding: 30.0px;
+  background-color: hsla(var(--igx-grays-200));
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: stretch;
+  margin: 0.0px;
+  flex-shrink: 0;
+}
+.h5 {
+  margin: 8.0px;
+  padding: 0.0px;
+  height: max-content;
+}
+.user-input {
+  margin: 8.0px;
+  padding: 0.0px;
+  height: max-content;
+}
+.icon-1 {
+  margin: 0.0px;
+  padding: 0.0px;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+.tabs {
+  flex-shrink: 0;
+}
+.tab-item {
+  align-items: stretch;
+  position: relative;
+  min-height: 50px;
+  min-width: 100%;
+}
+.tab {
+  height: 100%;
+  min-width: 100%;
+}
+.row-layout {
+  display: flex;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}

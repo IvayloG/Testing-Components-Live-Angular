@@ -1,0 +1,63 @@
+:host {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.group {
+  background-color: hsla(var(--igx-grays-400));
+  border-color: hsla(var(--igx-primary-400));
+  border-style: solid;
+  align-items: stretch;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_1 {
+  background-color: hsla(var(--igx-grays-100));
+  border-color: hsla(var(--igx-primary-300));
+  border-style: solid;
+  align-items: stretch;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_2 {
+  position: relative;
+  align-items: stretch;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.text {
+  min-width: min-content;
+  height: max-content;
+}
+.tabs {
+  margin: 16px;
+  min-width: 0;
+  min-height: 0;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.tab {
+  height: 100%;
+  min-width: 100%;
+}
+.tab-item {
+  min-width: 100%;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+.row-layout {
+  display: flex;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}

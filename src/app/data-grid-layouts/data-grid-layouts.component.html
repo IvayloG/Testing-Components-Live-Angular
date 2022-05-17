@@ -1,0 +1,37 @@
+<igx-grid [data]="northwindCustomers" primaryKey="customerID" displayDensity="cosy" rowSelection="multiple" cellSelection="multiple" [moving]="true" [allowFiltering]="true" filterMode="quickFilter" class="grid">
+  <igx-grid-toolbar>
+    <igx-grid-toolbar-actions>
+      <igx-grid-toolbar-pinning>true</igx-grid-toolbar-pinning>
+      <igx-grid-toolbar-hiding>true</igx-grid-toolbar-hiding>
+      <igx-grid-toolbar-advanced-filtering></igx-grid-toolbar-advanced-filtering>
+    </igx-grid-toolbar-actions>
+    <igx-grid-toolbar-title>Grid Toolbar</igx-grid-toolbar-title>
+  </igx-grid-toolbar>
+  <igx-column header="customerID" field="customerID" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" title="customerID"></igx-column>
+  <igx-column header="companyName" field="companyName" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" title="companyName"></igx-column>
+  <igx-column header="contactName" field="contactName" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" title="contactName"></igx-column>
+  <igx-column header="contactTitle" field="contactTitle" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" title="contactTitle"></igx-column>
+  <igx-column header="street" field="address.street" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" title="address.street"></igx-column>
+  <igx-column header="city" field="address.city" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" title="address.city"></igx-column>
+  <igx-column header="region" field="address.region" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" title="address.region"></igx-column>
+  <igx-column header="postalCode" field="address.postalCode" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" title="address.postalCode"></igx-column>
+  <igx-column header="country" field="address.country" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" title="address.country"></igx-column>
+  <igx-column header="phone" field="address.phone" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" title="address.phone"></igx-column>
+</igx-grid>
+<igx-grid [data]="northwindEmployees" primaryKey="employeeID" displayDensity="cosy" class="grid">
+  <igx-column header="employeeID" field="employeeID" dataType="number" [sortable]="true" title="employeeID"></igx-column>
+  <igx-column header="lastName" field="lastName" dataType="string" [sortable]="true" title="lastName"></igx-column>
+  <igx-column header="firstName" field="firstName" dataType="string" [sortable]="true" title="firstName"></igx-column>
+  <igx-column header="title" field="title" dataType="string" [sortable]="true" title="title"></igx-column>
+  <igx-column header="titleOfCourtesy" field="titleOfCourtesy" dataType="string" [sortable]="true" title="titleOfCourtesy"></igx-column>
+  <igx-column header="birthDate" field="birthDate" dataType="date" [sortable]="true" title="birthDate"></igx-column>
+  <igx-column header="hireDate" field="hireDate" dataType="date" [sortable]="true" title="hireDate"></igx-column>
+  <igx-column header="street" field="address.street" dataType="string" [sortable]="true" title="address.street"></igx-column>
+  <igx-column header="city" field="address.city" dataType="string" [sortable]="true" title="address.city"></igx-column>
+  <igx-column header="region" field="address.region" dataType="string" [sortable]="true" title="address.region"></igx-column>
+  <igx-column header="postalCode" field="address.postalCode" dataType="string" [sortable]="true" title="address.postalCode"></igx-column>
+  <igx-column header="country" field="address.country" dataType="string" [sortable]="true" title="address.country"></igx-column>
+  <igx-column header="phone" field="address.phone" dataType="string" [sortable]="true" title="address.phone"></igx-column>
+  <igx-column header="notes" field="notes" dataType="string" [sortable]="true" title="notes"></igx-column>
+  <igx-column header="avatarUrl" field="avatarUrl" dataType="string" [sortable]="true" title="avatarUrl"></igx-column>
+</igx-grid>

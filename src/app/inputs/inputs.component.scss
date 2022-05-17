@@ -1,0 +1,180 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  overflow: auto;
+}
+.group {
+  align-items: flex-end;
+  padding: 16px;
+  position: relative;
+  min-height: 50px;
+  min-width: 50px;
+}
+.column-layout {
+  margin: 0.0px;
+  padding: 32.0px;
+  align-content: stretch;
+  width: 500px;
+  min-width: 320px;
+  background-color: hsla(var(--igx-surface-500));
+  align-items: stretch;
+  min-height: 50px;
+}
+.group_1 {
+  margin: 0 0 32px;
+  min-height: max-content;
+  align-items: stretch;
+  position: relative;
+  min-width: 50px;
+}
+.group_2 {
+  padding: 32px;
+  align-content: stretch;
+  width: 500px;
+  min-width: 320px;
+  background-color: hsla(var(--igx-surface-500));
+  align-items: stretch;
+  min-height: 50px;
+}
+.group_3 {
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 0 16px;
+  min-height: 50px;
+  min-width: 50px;
+}
+.group_4 {
+  margin: 8px;
+  position: relative;
+  min-width: 50px;
+}
+.group_5 {
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 0 16px;
+  min-height: 50px;
+  min-width: 50px;
+}
+.group_6 {
+  align-items: center;
+}
+.group_7 {
+  margin: 0 0 16px;
+  position: relative;
+  min-height: 50px;
+  min-width: 50px;
+}
+.element {
+  min-width: min-content;
+  height: max-content;
+}
+.group_8 {
+  align-items: stretch;
+}
+.group_9 {
+  position: relative;
+  min-height: 50px;
+  min-width: 50px;
+}
+.radio-group {
+  margin: 0 32px 0 16px;
+  width: max-content;
+  height: max-content;
+}
+.checkbox {
+  margin: 0 16px;
+  width: max-content;
+  height: max-content;
+}
+.user-input {
+  margin: 0 0 0 16px;
+  width: max-content;
+  height: max-content;
+}
+.slider {
+  min-width: 50px;
+  height: max-content;
+}
+.button {
+  margin: 16px;
+}
+.radio {
+  padding: 8px;
+}
+.user-input_1 {
+  flex-shrink: 0;
+  min-width: min-content;
+  height: max-content;
+}
+.user-input_2 {
+  width: max-content;
+  height: max-content;
+}
+.input {
+  min-height: max-content;
+  max-height: max-content;
+  margin: 0 0 16px;
+}
+.user-input_3 {
+  margin: 0 0 16px;
+}
+.user-input_4 {
+  min-width: min-content;
+  height: max-content;
+}
+.icon {
+  width: 36px;
+  height: 36px;
+  font-size: 36px;
+  margin: 8px;
+}
+.icon_1 {
+  width: 48px;
+  height: 48px;
+  font-size: 48px;
+  margin: 8px;
+}
+.avatar {
+  margin: 16px;
+}
+.chip {
+  margin: 0 16px 0 0;
+  width: max-content;
+  height: max-content;
+}
+.chip_1 {
+  width: max-content;
+  height: max-content;
+}
+.icon_2 {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+.icon_3 {
+  min-width: max-content;
+  min-height: max-content;
+  max-width: max-content;
+  max-height: max-content;
+}
+.icon_4 {
+  margin: 8px;
+}
+.icon_5 {
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+}
+.row-layout {
+  display: flex;
+}
+.column-layout_1 {
+  display: flex;
+  flex-direction: column;
+}

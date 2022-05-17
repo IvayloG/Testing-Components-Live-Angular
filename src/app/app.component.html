@@ -1,0 +1,133 @@
+<igx-navbar class="navbar">
+  <igx-navbar-action>
+    <button igxButton="icon" igxRipple [igxToggleAction]="navDrawer" class="button">
+      <igx-icon>
+        menu
+      </igx-icon>
+    </button>
+  </igx-navbar-action>
+  <ng-container>
+    <button igxButton="icon" igxRipple class="button">
+      <igx-icon>
+        search
+      </igx-icon>
+    </button>
+    <button igxButton="icon" igxRipple class="button">
+      <igx-icon>
+        favorite
+      </igx-icon>
+    </button>
+    <button igxButton="icon" igxRipple class="button">
+      <igx-icon>
+        more_vert
+      </igx-icon>
+    </button>
+  </ng-container>
+  <igx-navbar-title>Testing Samples</igx-navbar-title>
+</igx-navbar>
+<div class="group row-layout">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="1200" width="320px" #navDrawer class="nav-drawer">
+    <ng-template igxDrawer>
+      <div [isHeader]="true" igxDrawerItem class="nav-drawer-item">
+        <span>Layouts</span>
+      </div>
+      <div igxDrawerItem routerLink="/layouts" class="nav-drawer-item">
+        <igx-icon class="icon">
+          view_quilt
+        </igx-icon>
+        <span>Flex layouts</span>
+      </div>
+      <div igxDrawerItem routerLink="/position" class="nav-drawer-item">
+        <igx-icon class="icon">
+          my_location
+        </igx-icon>
+        <span>Position</span>
+      </div>
+      <div igxDrawerItem routerLink="/tab-layout" class="nav-drawer-item">
+        <igx-icon class="icon">
+          tab
+        </igx-icon>
+        <span>Tab layout</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem class="nav-drawer-item">
+        <span>Content</span>
+      </div>
+      <div igxDrawerItem routerLink="/card-calendar" class="nav-drawer-item">
+        <igx-icon class="icon">
+          calendar_today
+        </igx-icon>
+        <span>Card-Calendar</span>
+      </div>
+      <div igxDrawerItem routerLink="/lists-data" class="nav-drawer-item">
+        <igx-icon class="icon">
+          list_alt
+        </igx-icon>
+        <span>List + data</span>
+      </div>
+      <div igxDrawerItem routerLink="/data-grid-layouts" class="nav-drawer-item">
+        <igx-icon class="icon">
+          list_alt
+        </igx-icon>
+        <span>Data grid</span>
+      </div>
+      <div igxDrawerItem routerLink="/type-scale" class="nav-drawer-item">
+        <igx-icon class="icon">
+          text_fields
+        </igx-icon>
+        <span>Type scale + text</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem class="nav-drawer-item">
+        <span>Inputs</span>
+      </div>
+      <div igxDrawerItem routerLink="/inputs" class="nav-drawer-item">
+        <igx-icon class="icon">
+          keyboard
+        </igx-icon>
+        <span>Inputs + buttons</span>
+      </div>
+      <div igxDrawerItem routerLink="/pickers-combo" class="nav-drawer-item">
+        <igx-icon class="icon">
+          arrow_drop_down_circle
+        </igx-icon>
+        <span>Pickers</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem class="nav-drawer-item">
+        <span>Notifications</span>
+      </div>
+      <div igxDrawerItem routerLink="/dialogs-and-overlays" class="nav-drawer-item">
+        <igx-icon class="icon">
+          open_in_new
+        </igx-icon>
+        <span>Dialogs and overlays</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem class="nav-drawer-item">
+        <span>Misc</span>
+      </div>
+      <div igxDrawerItem routerLink="/sign-in-page" class="nav-drawer-item">
+        <igx-icon class="icon">
+          account_circle
+        </igx-icon>
+        <span>Sign in</span>
+      </div>
+      <div igxDrawerItem routerLink="/image" class="nav-drawer-item">
+        <igx-icon class="icon">
+          account_circle
+        </igx-icon>
+        <span>Images</span>
+      </div>
+      <div [isHeader]="true" igxDrawerItem class="nav-drawer-item">
+        <span>Interactions</span>
+      </div>
+      <div igxDrawerItem class="nav-drawer-item">
+        <igx-icon class="icon">
+          remove_red_eye
+        </igx-icon>
+        <span>Show/hide interacitons</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="view-container">
+    <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
+  </div>
+</div>
